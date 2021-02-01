@@ -1,0 +1,32 @@
+Release Notes
+*************
+v.0.3.1
+=======
+  - Add 'hostname' attribute to 'testsuite'
+  - Add 'time' attribute to 'testsuite'
+  - Add 'package' attribute to 'testsuite'. The value is pod's name.
+  - Add more tests to 'TestSummaryTest'.
+  - Fix doc typos.
+  - Update class diagram in UML.
+  
+v.0.3.0
+=======
+  - Change 'slot' in 'TestCase' for 'method'. Test slots are not used
+    and the syntax pod::Type#method makes simpler the 'TestCase' 
+    creation.
+  - Remove the enum 'Status' and split TestResult in 'TestSuccess', 
+    'TestFailure', 'TestError' and 'TestSkipped'. It simplifies the 
+    code that converts to xml 'toXml' because is done in each 
+    subclass of 'TestResult'. Also simplifies the tests.
+  - Add tests to the Xml output.
+    
+v.0.2.0
+=======
+  - Simplify test results class hierarchy.
+  - Add documentation.
+  - Add doc to integration with jenkins.
+  - Add @Ignore facet to skip tests.
+
+v.0.1.0
+=======
+  - Initial alfa release.
